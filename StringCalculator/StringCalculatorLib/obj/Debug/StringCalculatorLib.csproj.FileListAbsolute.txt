@@ -1,0 +1,6 @@
+C:\My Files\Visual Studio Repos\StringCalculator\StringCalculatorLib\bin\Debug\StringCalculatorLib.dll
+C:\My Files\Visual Studio Repos\StringCalculator\StringCalculatorLib\bin\Debug\StringCalculatorLib.pdb
+C:\My Files\Visual Studio Repos\StringCalculator\StringCalculatorLib\obj\Debug\StringCalculatorLib.csproj.AssemblyReference.cache
+C:\My Files\Visual Studio Repos\StringCalculator\StringCalculatorLib\obj\Debug\StringCalculatorLib.csproj.CoreCompileInputs.cache
+C:\My Files\Visual Studio Repos\StringCalculator\StringCalculatorLib\obj\Debug\StringCalculatorLib.dll
+C:\My Files\Visual Studio Repos\StringCalculator\StringCalculatorLib\obj\Debug\StringCalculatorLib.pdb
