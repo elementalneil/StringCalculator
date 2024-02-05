@@ -50,6 +50,12 @@ namespace StringCalculatorLib.Tests {
             Assert.ThrowsException<ArgumentException>(() => StringCalculator.Add(input));
             input = "-10,11,12";
             Assert.ThrowsException<ArgumentException>(() => StringCalculator.Add(input));
+            input = "//|\n1|2,3|4,5";
+            Assert.ThrowsException<ArgumentException>(() => StringCalculator.Add(input));
+            input = "//;\n1;2,-3;4;5";
+            Assert.ThrowsException<ArgumentException>(() => StringCalculator.Add(input));
+            input = "//***\n1,2,3";
+            Assert.ThrowsException<ArgumentException>(() => StringCalculator.Add(input));
         }
 
         [TestMethod]
@@ -57,6 +63,26 @@ namespace StringCalculatorLib.Tests {
             string input = "//|\n1|2|3|4|5";
             int expectedResult = 15;
             int actualResult = StringCalculator.Add(input);
+            Assert.AreEqual(expectedResult, actualResult);
+
+            input = "//;\n1;;2";
+            expectedResult = 3;
+            actualResult = StringCalculator.Add(input);
+            Assert.AreEqual(expectedResult, actualResult);
+
+            input = "//###\n1###2###3";
+            expectedResult = 6;
+            actualResult = StringCalculator.Add(input);
+            Assert.AreEqual(expectedResult, actualResult);
+
+            input = "//++\n1++2++3";
+            expectedResult = 6;
+            actualResult = StringCalculator.Add(input);
+            Assert.AreEqual(expectedResult, actualResult);
+
+            input = "//%\n1001%2%3%4%5";
+            expectedResult = 14;
+            actualResult = StringCalculator.Add(input);
             Assert.AreEqual(expectedResult, actualResult);
         }
     }
