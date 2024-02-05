@@ -21,6 +21,9 @@ namespace StringCalculatorLib {
                     numbers = numbers.Substring(customDelimiterMatch.Length);
                 }
             }
+            else {
+
+            }
 
             List<int> numbersArray;
             try {

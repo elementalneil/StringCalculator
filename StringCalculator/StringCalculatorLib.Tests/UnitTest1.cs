@@ -51,5 +51,13 @@ namespace StringCalculatorLib.Tests {
             input = "-10,11,12";
             Assert.ThrowsException<ArgumentException>(() => StringCalculator.Add(input));
         }
+
+        [TestMethod]
+        public void CustomDelimeterTester() {
+            string input = "//|\n1|2|3|4|5";
+            int expectedResult = 15;
+            int actualResult = StringCalculator.Add(input);
+            Assert.AreEqual(expectedResult, actualResult);
+        }
     }
 }
